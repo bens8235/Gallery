@@ -57,3 +57,12 @@ button {
 button:focus {
   outline: none;
 }
+
+@media (max-width: 425px) {
+  #main-image {
+    object-fit: contain;
+  }
+  body {
+    background-color: black;
+  }
+}
