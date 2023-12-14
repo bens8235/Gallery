@@ -12,8 +12,8 @@ body {
 
 #thumbnail-container {
   display: flex;
-  justify-content: center;
-  z-index: 1;
+  justify-content: flex-end;
+  z-index: 2;
   width: 100%;
   position: absolute;
   top: 0;
@@ -26,12 +26,34 @@ body {
 
 #buttons {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   z-index: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+button {
+  background: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid gray;
+}
+
+#left {
+  margin-left: 100px;
+}
+
+#right {
+  margin-right: 100px;
+}
+
+button:focus {
+  outline: none;
 }
