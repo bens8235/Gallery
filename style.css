@@ -8,6 +8,7 @@ body {
   width: 100%;
   object-fit: cover;
   position: relative;
+  display: block;
 }
 
 #thumbnail-container {
