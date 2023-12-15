@@ -59,10 +59,11 @@ leftButton.addEventListener("click", function () {
 });
 
 window.addEventListener("keydown", function (event) {
-  if (event.code === "ArrowLeft") {
+  console.log(event);
+  if (event.code === "ArrowLeft" || event.code === "Tab") {
     leftButtonEvent();
   }
-  if (event.code === "ArrowRight") {
+  if (event.code === "ArrowRight" || event.code === "Enter") {
     rightButtonEvent();
   }
 });
