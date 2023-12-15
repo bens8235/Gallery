@@ -4,9 +4,12 @@ const rightButton = document.getElementById("right");
 const leftButton = document.getElementById("left");
 
 function changeImage(i) {
-  let mainImageSrc = mainImage.src;
   let mainImageAlt = mainImage.alt;
-  [mainImage.src, mainImage.alt] = [thumbnails[i].src, thumbnails[i].alt];
+  let mainImageSrc = mainImage.src;
+  mainImageSrc = mainImageSrc.replace("/images", "/images/small");
+  let thumnailsSrc = thumbnails[i].src;
+  thumnailsSrc = thumnailsSrc.replace("/images/small", "/images");
+  [mainImage.src, mainImage.alt] = [thumnailsSrc, thumbnails[i].alt];
   [thumbnails[i].src, thumbnails[i].alt] = [mainImageSrc, mainImageAlt];
 }
 
